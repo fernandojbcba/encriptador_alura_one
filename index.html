@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/Logo.png" type="image/icon type">
+    <title>encriptador</title>
+</head>
+<body class="body-contenedor">
+    <header>
+        <div class="cabecera">
+            <img class=logo src="img/Logo.png" alt="logo">
+            <h1 class="titulo">Encriptador de Mensajes</h1>
+        </div>
+
+    </header>
+    <main>
+        <div class="contenedor-principal">
+
+                        <textarea name="text" id="texto" class="texto" cols="35" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                        <div class="mensajes" id="mensajes">
+
+                            <section class="vacio" id="vacio">
+                                <h1><img src="./img/programador.png" alt="Imágen de mensaje no encontrado" id="imagenSinMensaje"></h1>
+                                <h2 id="sinMensaje">Ningún mensaje fue encontrado</h2>
+                                <p id="descpripcionSinMensaje">Ingresa el texto que desea encriptar o desencriptar</p>
+                            </section>
+                            
+                            <section>
+                                <textarea name="text" id="resultado" class="texto" cols="50" rows="12"></textarea>
+                                <input type="button" value="Copiar" class="copiar" id="copiar">
+                            </section>
+                            
+                        </div>
+                    
+                        <section class="botones">
+                    
+                            <p> Solo letras minúsculas y sin acento</p>
+                            <input type="button" value="Encriptar" class="encriptar" id="encriptar">
+                            <input type="button" value="Desencriptar" class="desencriptar" id="desencriptar">
+                    
+                        </section>
+                        
+                        
+                    </div>
+        
+        </div>
+        
+    </main>
+    <footer>
+        
+            <p>Benavidez fernando</p>
+            <p>Programa ONE</p> 
+            <p>Alura</p>
+    </footer>
+    </body>
+    <script src="./js/jsjs.js"></script>
+</html>

@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body-contenedor{
+    background-color: #F3F5FC;
+    font-family: 'inter';
+    /* transition: 1s; */
+}
+.cabecera{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.logo{    
+    margin-left: 40px;
+}
+.titulo{
+    margin-top: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.contenedor-principal{
+    width: 90%;
+    margin: auto;
+}
+.texto{
+    height: 50%;
+    margin: 2% auto 0;
+    display: inline-block;
+    font-size: 32px;
+    color: #183073;
+    border: none;
+    background-color: #F3F5FC ;
+    resize: none;
+    /* transition: 1s; */
+}
+
+textarea:focus{
+    outline: none !important;  
+    /* !important es para que tome en tus hijos el mismo prop */
+}
+::placeholder{
+    color: darkblue;
+    opacity: 0.5;
+}
+.mensajes{
+    float: right;
+    background-color: white;
+    text-align: center;
+    width: 35%;
+    height: 90%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 1s;
+}
+.mensajes img{
+    width: 90%;
+}
+#imagenSinMensaje{
+    visibility: visible;
+}
+.mensajes h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mensajes p{
+    margin: 2%;
+    font-size: 16px;
+}
+#noResuelto{
+    padding: 30px 20px;
+}
+
+#resultado{
+    width: 100%;
+    height: 90%;
+    font-size: 24px;
+    color: grey;
+    text-align: left;
+    visibility: visible;
+    background-color: white;
+    display: none;
+}
+
+#sinMensaje{
+    visibility: visible;
+}
+
+#descripcionSinMensaje{
+    visibility: visible;
+}
+
+.copiar{
+    margin: 2%;
+    width: 40%;
+    padding: 3% 0;
+    font-size: 16px;
+    border: ridge;
+    color: #183073;
+    background-color: #D8DFE8;
+    border-radius: 15px;
+    border-width: thin;
+    border-color: #183073;
+    transition: 1s all;
+    cursor: pointer;
+    display: none;
+}
+
+.botones{
+    display: block;
+}
+
+.botones p{
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 1%;
+}
+
+.encriptar{
+
+    margin: auto;
+    width: 20%;
+    padding: 1% 0;
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: #183073;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+
+.desencriptar{
+    margin-left: 2%;
+    width: 20%;
+    padding: 1% 0;
+    font-size: 16px;
+    border: ridge;
+    color: #183073;
+    background-color: #D8DFE8;
+    border-width: thin;
+    border-color:  #183073;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.encriptar:hover, .desencriptar:hover, .copiar:hover{
+    background-color: #47478c;
+}
+
+footer{
+    padding: 10%;
+    text-align: center;
+    margin: 1%;
+    color: #183073;
+    transition: 1s;
+
+background-color: red;
+}
+
+
+
+@media screen and (max-width:1024px){
+
+    .logo{
+        margin: 10% auto;
+    }
+
+
+    .texto,.botones{
+        display: block;
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    #texto{
+        height: 5em;
+    }
+
+    #resultado{
+        height: 5em;
+    }
+
+    .mensajes{
+        width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .vacio{
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .encriptar,.desencriptar{
+        width: 45%;
+        margin: 2%;
+        padding: 2% 0;
+    }
+
+    .desencriptar:hover, .copiar:hover{
+        background-color: #D8DFE8;
+    }
+
+    .encriptar:hover{
+        background-color: darkblue;
+    }
+
+    #imagenSinMensaje{
+        display: none;
+    }
+}
+
