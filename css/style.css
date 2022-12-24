@@ -19,6 +19,7 @@
     margin-top: 5px;
     font-size: 35px;
     font-weight: bold;
+    color:#183073
 }
 
 .contenedor-principal{
@@ -91,10 +92,13 @@ textarea:focus{
 
 #sinMensaje{
     visibility: visible;
+    color:#183073
 }
 
-#descripcionSinMensaje{
+#descpripcionSinMensaje{
     visibility: visible;
+    color: #183073;
+
 }
 
 .copiar{
@@ -174,7 +178,12 @@ footer{
         margin: 10% auto;
     }
 
-
+    .titulo{
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        color:#183073
+    }
     .texto,.botones{
         display: block;
         width: 100%;
@@ -183,10 +192,12 @@ footer{
 
     #texto{
         height: 5em;
+        color: #183073;
     }
 
     #resultado{
         height: 5em;
+        color:#183073;
     }
 
     .mensajes{
@@ -194,6 +205,7 @@ footer{
         float: none;
         display: block;
         margin: auto;
+        color: #183073;
     }
 
     .vacio{
