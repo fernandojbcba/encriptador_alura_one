@@ -5,7 +5,7 @@
 .body-contenedor{
     background-color: #F3F5FC;
     font-family: 'inter';
-    /* transition: 1s; */
+    transition: 1s;
 }
 .cabecera{
     display: flex;
@@ -35,7 +35,7 @@
     border: none;
     background-color: #F3F5FC ;
     resize: none;
-    /* transition: 1s; */
+    transition: 1s;
 }
 
 textarea:focus{
@@ -179,7 +179,8 @@ footer{
     }
 
     .titulo{
-        margin-top: 5px;
+        margin-top: 45px;
+        margin-right:15px;
         font-size: 20px;
         font-weight: bold;
         color:#183073
